@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "description": "Structured data for a single company or tool in a supply chain vertical",
+  "required_fields": [
+    "name",
+    "category",
+    "url",
+    "open_source",
+    "tier",
+    "key_insight",
+    "discovered_via",
+    "last_verified"
+  ],
+  "example": {
+    "name": "Example Corp",
+    "category": "Data Annotation",
+    "url": "https://example.com",
+    "open_source": false,
+    "tier": "Platform",
+    "funding": "TBA",
+    "key_insight": "Uses AI-assisted pre-labeling to reduce human annotation costs by 50%.",
+    "discovered_via": "VC market map",
+    "last_verified": "2025-07-04",
+    "notes": "Recently launched medical imaging vertical."
+  },
+  "tier_options": [
+    "Giant",
+    "Platform",
+    "Specialist",
+    "Cloud-Native",
+    "Open Source",
+    "Underdog"
+  ],
+  "discovered_via_options": [
+    "HN Show HN",
+    "VC market map",
+    "Awesome List",
+    "Conference talk",
+    "Podcast",
+    "StackShare",
+    "AlternativeTo",
+    "YC Directory",
+    "Word of mouth",
+    "Other"
+  ]
+}

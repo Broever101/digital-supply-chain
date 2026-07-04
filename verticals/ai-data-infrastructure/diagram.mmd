@@ -1,0 +1,16 @@
+graph LR
+    A[Raw Web Data<br/>Common Crawl<br/>Bright Data] --> B[Data Scraping & Ingestion<br/>Apify<br/>ScrapingBee]
+    B --> C[Data Marketplaces<br/>Snowflake<br/>AWS Data Exchange]
+    C --> D[Raw Datasets]
+    E[Synthetic Data<br/>Gretel<br/>Hazy] --> D
+    D --> F[Data Annotation<br/>Scale AI<br/>Labelbox<br/>Label Studio]
+    F --> G[Labeled Datasets]
+    G --> H[Pipeline Orchestration<br/>Airflow<br/>DVC<br/>MLflow]
+    H --> I[Versioned Training Data]
+    I --> J[GPU Clouds<br/>Lambda Labs<br/>CoreWeave<br/>SageMaker]
+    J --> K[Trained AI Model]
+
+    style A fill:#e1f5e1,stroke:#333,stroke-width:2px
+    style F fill:#fff4e1,stroke:#333,stroke-width:2px
+    style J fill:#e1f0ff,stroke:#333,stroke-width:2px
+    style K fill:#ffe1e1,stroke:#333,stroke-width:2px
