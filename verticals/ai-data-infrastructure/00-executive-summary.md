@@ -30,4 +30,4 @@ The data annotation market alone — just one step in this chain — is projecte
 
 ---
 
-*Continue to the layers: [01-data-sourcing](01-data-sourcing/00-overview.md) → [02-data-annotation](02-data-annotation.md) → [03-pipeline-orchestration](03-pipeline-orchestration.md) → [04-delivery-compute](04-delivery-compute.md)*
+*Continue to the layers: [01-data-sourcing](01-data-sourcing/00-overview.md) → [02-data-annotation](02-data-annotation/00-overview.md) → [03-pipeline-orchestration](03-pipeline-orchestration.md) → [04-delivery-compute](04-delivery-compute.md)*
