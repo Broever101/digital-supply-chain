@@ -119,6 +119,7 @@ A satellite company sells to a geospatial analytics firm, which sells to a data 
 | **Financial** | Bloomberg, Refinitiv, IEX Cloud, Polygon.io, Quandl | Proprietary |
 | **Legal** | Casetext, vLex, Fastcase | Proprietary |
 | **Scientific** | PubMed, arXiv, GenBank, PDB, Hugging Face Datasets | Mostly open |
+| **Cybersecurity** | Recorded Future, Flashpoint, Intel 471, VirusTotal, PhishTank | Mixed (community + proprietary)
 
 ---
 
@@ -136,3 +137,4 @@ A satellite company sells to a geospatial analytics firm, which sells to a data 
 - [10: Human Behavioral](10-human-behavioral.md)
 - [11: Multimedia Libraries](11-multimedia-libraries.md)
 - [12: Domain-Specific](12-domain-specific.md)
+- [13: Cybersecurity / Threat Intelligence](13-cybersecurity.md)
