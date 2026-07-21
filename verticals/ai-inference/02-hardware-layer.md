@@ -117,4 +117,4 @@ If we must pick a *company* Stalwart, the answer is **FuriosaAI** — a South Ko
 
 ---
 
-*Next: [03-virtualization-cloud](03-virtualization-cloud.md)*
+*Next: [03-virtualization-cloud](03-virtualization-cloud/README.md). For Chinese hardware alternatives, see [07-chinese-hardware](07-chinese-hardware/README.md).*

@@ -1,16 +1,17 @@
 graph LR
     %% Layer 1: Hardware
     HW[NVIDIA H100/B200/GB200<br/>AMD MI300X<br/>Groq LPU<br/>Cerebras WSE<br/>Google TPU]
+    CHN_HW[Huawei Ascend 910C/920<br/>Cambricon MLU<br/>MetaX C500<br/>Biren BR100]
     
     %% Layer 2: Virtualization & Cloud
-    VIRT[MIG / Run:ai<br/>Time-slicing<br/>vGPU]
-    CLOUD[CoreWeave<br/>AWS / Azure / GCP<br/>Lambda / Crusoe<br/>Modal / Baseten<br/>RunPod]
+    VIRT[MIG / Run:ai<br/>BlueField DPU<br/>AMD SPX/DPX/QPX/CPX<br/>Ascend vNPU<br/>Confidential Computing]
+    CLOUD[CoreWeave<br/>AWS / Azure / GCP<br/>Lambda / Crusoe / Nscale<br/>Modal / Baseten<br/>RunPod / Sovereign Clouds]
     
     %% Layer 3: Orchestration
-    ORCH[Kubernetes + Volcano<br/>Ray Serve / Anyscale<br/>KServe / Seldon<br/>NVIDIA Dynamo<br/>NVIDIA NIM]
+    ORCH[Kubernetes + Volcano/Kueue<br/>Ray Serve / Anyscale<br/>KServe / Seldon / llm-d<br/>NVIDIA Dynamo<br/>Mooncake]
     
     %% Layer 4: Inference Engines
-    ENGINE[vLLM<br/>SGLang<br/>llama.cpp / Ollama<br/>TensorRT-LLM<br/>MLX]
+    ENGINE[vLLM / vLLM-Ascend<br/>SGLang<br/>llama.cpp / Ollama<br/>TensorRT-LLM<br/>MLX]
     
     %% Layer 5: Application & Control Plane
     APP[LiteLLM / OpenRouter<br/>Portkey / Helicone<br/>Stripe / Lago<br/>Langfuse / promptfoo]
@@ -19,6 +20,7 @@ graph LR
     USER[Developer<br/>Coding Agents<br/>Consumer Apps]
     
     HW --> VIRT
+    CHN_HW -.->|parallel silicon universe| VIRT
     VIRT --> CLOUD
     CLOUD --> ORCH
     ORCH --> ENGINE
@@ -29,6 +31,7 @@ graph LR
     HW -.->|local inference| ENGINE
 
     style HW fill:#e1f5e1,stroke:#333,stroke-width:2px
+    style CHN_HW fill:#ffe1e1,stroke:#333,stroke-width:2px
     style CLOUD fill:#e1f0ff,stroke:#333,stroke-width:2px
     style ORCH fill:#fff4e1,stroke:#333,stroke-width:2px
     style ENGINE fill:#ffe1e1,stroke:#333,stroke-width:2px

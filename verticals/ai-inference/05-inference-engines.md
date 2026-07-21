@@ -206,4 +206,4 @@ Other Stalwarts in this layer:
 
 ---
 
-*Next: [06-application-layer](06-application-layer.md)*
+*Next: [06-application-layer](06-application-layer.md). For how these engines run on Chinese hardware, see [07-chinese-hardware/03-software-stack](07-chinese-hardware/03-software-stack.md).*

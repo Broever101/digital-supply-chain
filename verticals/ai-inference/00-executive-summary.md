@@ -12,13 +12,14 @@ This vertical maps the digital supply chain that makes inference possible. It ru
 
 Think of it as a power grid, not a pipeline:
 
-1. **Hardware** — The silicon. GPUs from NVIDIA and AMD, custom ASICs from Google and AWS, accelerator startups (Groq, Cerebras, SambaNova), the memory that holds the model, the fabric that links chips, and the cooling that keeps them from melting.
-2. **Virtualization and Cloud** — How a $30,000 GPU becomes a $2-per-hour billable unit. Hyperscalers, "neo-clouds," sovereign clouds, GPU partitioning, and the scheduling software that decides who gets what.
-3. **Orchestration** — Kubernetes and its descendants, plus the new NVIDIA Dynamo stack that coordinates inference across hundreds of GPUs.
-4. **Inference Engines** — The software that actually loads a model and emits tokens: vLLM, SGLang, llama.cpp, TensorRT-LLM, and the dozen specialized engines behind them.
-5. **Application Layer** — The gateways, routers, billing systems, observability tools, and benchmarks that developers actually touch.
+1. **Hardware** (Layer 2) — The silicon. GPUs from NVIDIA and AMD, custom ASICs from Google and AWS, accelerator startups (Groq, Cerebras, SambaNova), the memory that holds the model, the fabric that links chips, and the cooling that keeps them from melting. **Chinese alternatives are covered separately in Layer 7** because the US/Chinese silicon universes have diverged.
+2. **Virtualization and Cloud** (Layer 3) — How a $30,000 GPU becomes a $2-per-hour billable unit. Framed as a sovereign-cloud decision tree: bare-metal provisioning, GPU sharing (MIG, vGPU, time-slicing, Run:ai, BlueField DPU), storage, network fabric, IAM/security, observability, and provider profiles. A separate file covers real-world sovereign deployments.
+3. **Orchestration** (Layer 4) — Five patterns: Kubernetes-native (KServe, llm-d), Ray-native (Anyscale), serverless platforms (Modal, Baseten, Replicate), disaggregated custom (NVIDIA Dynamo, Mooncake), and vendor stacks (Together, Fireworks, DeepSeek). Plus the cluster schedulers that make multi-node work.
+4. **Inference Engines** (Layer 5) — The software that actually loads a model and emits tokens: vLLM, SGLang, llama.cpp, TensorRT-LLM, and the dozen specialized engines behind them.
+5. **Application Layer** (Layer 6) — The gateways, routers, billing systems, observability tools, and benchmarks that developers actually touch.
+6. **Chinese Hardware** (Layer 7) — Huawei Ascend and the other Chinese AI silicon vendors, the open-source stack that runs on them (vLLM-Ascend, SGLang, torch_npu), and the founder opportunities for PK/GCC builders.
 
-Above all of this sits the **end-user lens** — the layer where business models (aggregators, speed specialists, hyperscaler gateways, sovereign deployments, edge, frontier APIs) and performance metrics (TTFT, tokens-per-second, KV cache economics) determine who wins.
+Above all of this sits the **end-user lens** (Layer 1) — the layer where business models (aggregators, speed specialists, hyperscaler gateways, sovereign deployments, edge, frontier APIs) and performance metrics (TTFT, tokens-per-second, KV cache economics) determine who wins.
 
 ## The Big Picture
 
@@ -50,4 +51,4 @@ The AI inference market moves faster than any market this atlas covers. Star cou
 
 ---
 
-*Continue to the layers: [01-end-user-lens](01-end-user-lens.md) → [02-hardware-layer](02-hardware-layer.md) → [03-virtualization-cloud](03-virtualization-cloud.md) → [04-orchestration-layer](04-orchestration-layer.md) → [05-inference-engines](05-inference-engines.md) → [06-application-layer](06-application-layer.md)*
+*Continue to the layers: [01-end-user-lens](01-end-user-lens.md) → [02-hardware-layer](02-hardware-layer.md) → [03-virtualization-cloud](03-virtualization-cloud/README.md) → [04-orchestration](04-orchestration/README.md) → [05-inference-engines](05-inference-engines.md) → [06-application-layer](06-application-layer.md) → [07-chinese-hardware](07-chinese-hardware/README.md)*
