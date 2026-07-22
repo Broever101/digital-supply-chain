@@ -17,12 +17,13 @@ A living map of software supply chains across industries. Each "vertical" is an 
 ## Current Verticals
 
 - **AI Data Infrastructure** (in progress) — How AI labs get, clean, label, and deliver data to training clusters
+- **AI Inference** (in progress) — The supply chain behind every chat reply, agent step, and AI-coded line: from silicon to API gateway. Covers hardware (NVIDIA, AMD, Groq, Cerebras), virtualization/cloud framed as a sovereign-cloud decision tree, orchestration patterns (Kubernetes, Ray, NVIDIA Dynamo, Mooncake), inference engines (vLLM, SGLang, llama.cpp), the application/control-plane layer (LiteLLM, OpenRouter, billing, observability), and a dedicated chapter on Chinese hardware (Huawei Ascend, Cambricon, Biren, etc.) and the open-source stack that runs on it — for the PK/GCC founder angle.
 
 ## How to Navigate
 
-Each vertical follows the same structure:
+Each vertical follows the same structure, with depth scaled to the complexity of the supply chain:
 - `00-executive-summary.md` — Why this matters, in plain language
-- `01-*.md` through `04-*.md` — The supply chain layers, from raw material to finished product
+- Numbered chapters (`01-*.md` and up) — The supply chain layers, from raw material to finished product. Deeper verticals (like AI Inference) use sub-folders for layers with many distinct technical approaches.
 - `diagram.mmd` — A visual flowchart of the entire chain
 - `players.json` — A structured database of every company and tool mentioned
 
